@@ -1,0 +1,4 @@
+Hello World!
+My name is Ashwin Hegde, I work as a Software Engineer
+My primary language is JavaScript and Secondary language is Python
+Python is needed for scripting, Machine Learning and Quantum Programming
