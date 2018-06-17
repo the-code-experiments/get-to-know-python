@@ -1,4 +1,4 @@
-# How to Run? Open Terminal> python3 libEg3.py
+# How to Run? Open Terminal> python3 libEg4.py
 # Read the code comments and output on the terminal
 
 # Objective: Know about standard built-in library
