@@ -3,6 +3,9 @@
 
 # Objective: Know about JSON in Python using 'pickle' module
 
+# Compare with Marshal
+# https://docs.python.org/3/library/pickle.html#module-pickle
+
 # Python Object
 data = {
   "empId": 1,
@@ -17,14 +20,12 @@ data = {
 # Built-in JSON library
 import pickle
 
-# Dump Python Object to jsonEg1.json in JSON format
+# Dump Python Object to pickleEg1.pickle (Binary format)
 # using dump() function
 with open('pickleEg1.pickle', 'wb') as writeFile:
   pickle.dump(data, writeFile)
 
-print('\n')
-
-# Read data from JSON file
+# Read data from Pickle's Binary file
 with open('pickleEg1.pickle', 'rb') as readFile:
   readData = pickle.load(readFile)
-  print('Pickle file content: ', readData)
+  print('Pickle binary content: ', readData)
