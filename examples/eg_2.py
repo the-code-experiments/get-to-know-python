@@ -10,7 +10,10 @@ if choosenSubject in subjects:
   changeSubjectCode = input("Would you like to changes the " + choosenSubject + " subject's code? (y/n) ").lower()
   if changeSubjectCode == 'y':
     newSubjectCode = input("Please specific the new subject code for " + choosenSubject + " subject: ")
-    subjects[choosenSubject] = int(newSubjectCode)
+    try:
+      subjects[choosenSubject] = int(newSubjectCode)
+    except:
+      print("You did not enter a number")
 else:
   print("Subject do not exist")
 
@@ -18,7 +21,10 @@ else:
 
   if shouldAddNewSubject == 'y':
     newSubjectCode = input("What subject code would you like to give for subject " + choosenSubject + "? ")
-    subjects[choosenSubject] = int(newSubjectCode)
+    try:
+      subjects[choosenSubject] = int(newSubjectCode)
+    except:
+      print("You did not enter a number")
 
 print("Here are the updated list of subjects")
 print(subjects)
